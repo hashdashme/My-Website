@@ -5,7 +5,7 @@
 /// <reference lib="deno.ns" />
 import { serve } from "https://deno.land/std@0.133.0/http/server.ts";
 import { router } from "https://crux.land/router@0.0.11";
-import { h, ssr } from "https://crux.land/nanossr@0.0.4";
+import { h, ssr } from "https://crux.land/nanossr@0.0.5";
 
 const render = (component) => ssr(() => <App>{component}</App>);
 
