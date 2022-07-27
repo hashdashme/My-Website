@@ -38,7 +38,7 @@ function NavBar() {
      </div>
      <div class="text-[#69aaff] space-x-7">
         <a href="/nine" class="text-lg no-underline hover:text-[#87bbff] ml-3">Task 9</a>
-        <a href="https://www.youtube.com/watch?v=tO516EaRYHc" class="text-lg no-underline hover:text-[#87bbff] ml-3">Placeholder</a>
+        <a href="https://www.youtube.com/watch?v=tO516EaRYHc" target="_blank" class="text-lg no-underline hover:text-[#87bbff] ml-3">Placeholder</a>
      </div>
     </nav>
   );
@@ -134,7 +134,7 @@ function CloudComputing() {
         <img class="rounded" src="https://imgs.xkcd.com/comics/the_cloud.png"></img>
       </div>
       <div class="flex justify-center items-center text-gray-500 py-8">
-        <a href="https://xkcd.com/908">There's planned downtime every night when we turn on the Roomba and it runs over the cord. - xkcd</a>
+        <a href="https://xkcd.com/908" target="_blank">There's planned downtime every night when we turn on the Roomba and it runs over the cord. - xkcd</a>
       </div>
       <div class="flex justify-center items-center py-8">
         <h2 class="font-bold text-2xl">What is Cloud Computing?</h2>
