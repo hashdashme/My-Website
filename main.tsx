@@ -12,8 +12,10 @@ const render = (component) => ssr(() => <App>{component}</App>);
 serve(router(
   {
     "/": () => render(<Landing />),
-    "/stats": () => render(<Stats />),
+    
+    // Task 9
     "/nine": () => render(<Nine />),
+    "/cloudcomputing": () => render(<CloudComputing />),
   },
   () => render(<NotFound />),
 ));
@@ -34,9 +36,9 @@ function NavBar() {
      <div class="mb-2 sm:mb-0">
       <a href="/" class="text-2xl no-underline">The Website</a>
      </div>
-     <div class="text-[#69aaff]">
+     <div class="text-[#69aaff] space-x-7">
         <a href="/nine" class="text-lg no-underline hover:text-[#87bbff] ml-3">Task 9</a>
-        <a href="/todo" class="text-lg no-underline hover:text-[#87bbff] ml-3">TODO</a>
+        <a href="https://www.youtube.com/watch?v=tO516EaRYHc" class="text-lg no-underline hover:text-[#87bbff] ml-3">Placeholder</a>
      </div>
     </nav>
   );
@@ -46,16 +48,16 @@ function Landing() {
   return (
     <div>
       <div class="flex justify-center items-center py-12">
-        <iframe src="https://giphy.com/embed/tXLpxypfSXvUc" width="346" height="316" frameBorder="0"></iframe>
+        <iframe class="rounded" src="https://giphy.com/embed/tXLpxypfSXvUc" width="346" height="316" frameBorder="0"></iframe>
       </div>
-    <div class="flex justify-center items-center">
+      <div class="flex justify-center items-center">
         <div class="max-w-7xl py-24 px-4 sm:px-6 lg:py-24 lg:px-8 lg:flex lg:items-center lg:justify-between">
           <h2 class="text-3xl font-extrabold tracking-tight text-gray-500 md:text-4xl">
             <span class="block">We are online!</span>
             <span class="block text-[#b6d5ff]">Welcome to 'Task 12'.</span>
-        </h2>
-        <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0 lg:ml-8">
-          <div class="inline-flex rounded-md shadow">
+          </h2>
+          <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0 lg:ml-8">
+            <div class="inline-flex rounded-md shadow">
               <a href="/nine" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-[#368dff] hover:bg-[#1d7fff]"> Go to Task 9 </a>
             </div>
           </div>
@@ -64,29 +66,6 @@ function Landing() {
     </div>
   );
 }
-
-function Stats() {
-  const stats = [
-    { name: "Total Sales", stat: "41,897" },
-    { name: "Available Bagels", stat: "357" },
-    { name: "Avg. Open Rate", stat: "94.16%" },
-  ];
-
-  return (
-    <div class="p-5">
-      <h3 class="text-lg leading-6 font-medium text-gray-900">Last 30 days</h3>
-      <dl class="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-3">
-        {stats.map((item) => (
-          <div key={item.name} class="px-4 py-5 shadow rounded-lg bg-white overflow-hidden sm:p-6">
-            <dt class="text-sm font-medium text-gray-500 truncate">{item.name}</dt>
-            <dd class="mt-1 text-3xl font-semibold text-gray-900">{item.stat}</dd>
-          </div>
-        ))}
-      </dl>
-    </div>
-  );
-}
-
 
 const articles = [
   {
@@ -99,30 +78,29 @@ const articles = [
   {
     name: "Impacts of Digital Technology",
     summary: 'Digital technologies have grown exponentially, and their use has globalized. Ubiquitous and continuous connectivity has reached much of humanity thanks to the mass take-up of smartphones and the consequent access to information, social networks and audiovisual entertainment.',
-    bg: '#a2f6cf',
-    text: '#0f270c',
-    page: "/cloudcomputing",
+    bg: '#f96d71',
+    text: '#31090a',
+    page: "/digitech",
   },
   {
     name: "Access to Knowledge or Resources",
     summary: 'The World Wide Web (WWW), commonly known as the Web, is an information system enabling documents and other web resources to be accessed over the Internet. It provides access to vasts amount of information, media and services.',
     bg: '#aee8fa',
     text: '#0a1e31',
-    page: "/cloudcomputing",
+    page: "/ai",
   },
   {
     name: "Outsourcing",
     summary: 'Outsourcing is the business practice of hiring a party outside a company to perform services or create goods that were traditionally performed in-house by the company\'s own employees and staff. Outsourcing is a practice usually undertaken by companies as a cost-cutting measure.',
-    bg: '#f96d71',
-    text: '#31090a',
-    page: "/cloudcomputing",
+    bg: '#a2f6cf',
+    text: '#0f270c',
+    page: "/fiverr",
   }
 ];
 
 function Nine() {
   return (
     <div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-12">
-      {/* <div class="space-y-4 mb-12 lg:mb-8"> */}
       <div class="max-w-7xl py-12 px-4 sm:px-6 lg:py-12 lg:px-8 lg:flex lg:items-center lg:justify-between">
         <h2 class="text-4xl font-extrabold tracking-tight sm:text-4xl text-gray-500">Task Nine</h2>
         <h2 class="text-4xl font-extrabold tracking-tight sm:text-4xl text-[#b6d5ff]">Interactive Presentation: Impacts of Technologies</h2>
@@ -136,11 +114,46 @@ function Nine() {
             <div class="space-y-3">
               <p>{article.summary}</p>
             </div>
-            <a href={article.page} class={`bg-[${article.text}] text-[${article.bg}] font-bold py-2 px-4 rounded text-center`}>
+            <a href={article.page} class={`bg-[${article.text}] text-[${article.bg}] font-bold py-2 px-4 rounded text-center hover:transition-all duration-300 hover:bg-[#171717]`}>
               Learn More
             </a>
           </div>
         ))}
+      </div>
+    </div>
+  )
+}
+
+function CloudComputing() {
+  return (
+    <div class="mx-auto py-12 px-4 max-w-4xl sm:px-6 lg:px-8 lg:py-12 text-gray-300">
+      <div class="max-w-7xl py-12 px-6">
+        <h1 class="text-5xl font-extrabold sm:text-4xl text-[#ffbe69] text-center">Cloud Computing</h1>
+      </div>
+      <div class="flex justify-center items-center py-6">
+        <img class="rounded" src="https://imgs.xkcd.com/comics/the_cloud.png"></img>
+      </div>
+      <div class="flex justify-center items-center text-gray-500 py-8">
+        <a href="https://xkcd.com/908">There's planned downtime every night when we turn on the Roomba and it runs over the cord. - xkcd</a>
+      </div>
+      <div class="flex justify-center items-center py-8">
+        <h2 class="font-bold text-2xl">What is Cloud Computing?</h2>
+      </div>
+      <div class="flex justify-center items-center">
+        <p><span class="font-semibold">Cloud Computing</span> is the practise of storing, managing, and processing data on a network of remote servers hosted on the internet rather than a local server or a personal computer.
+        An example of cloud computing are infrastructure providers (AWS, GCP, DigitalOcean, Vultr, OVH, ...) that host a variety of servers which can be rented by users and businesses to host content or preform resource intensive tasks.</p>
+      </div>
+      <div class="flex justify-center items-center py-8">
+        <h2 class="font-bold text-2xl">Advantages of Cloud Computing.</h2>
+      </div>
+      <div class="flex justify-center items-center">
+        <p>Cloud computing enables users/businesses to utilise high-end hardware and bandwidth without needing to manage infrastructure themselves, such as maintenance on the servers. This allows the user to continue business as usual, minimising loss of productivity as they don't need to actively managed the infrastructure.</p>
+      </div>
+      <div class="flex justify-center items-center py-8">
+        <h2 class="font-bold text-2xl">Disadvantages of Cloud Computing.</h2>
+      </div>
+      <div class="flex justify-center items-center">
+        <p>Although cloud computing has numerous advantages, there are factors that can deter users from using cloud computing. First, servers are exposed to the internet for anyone to see; if not configured correctly, this can have disastrous consequences, such as the server being compromised by malicious actors, resulting in data theft/ransom. Second, even if the server is actively maintained by a specialist, problems may arise that result in permanent damage, such as data loss. This could be due to unexpected hardware failure or other factors (look up 'OVH fire').</p>
       </div>
     </div>
   )
