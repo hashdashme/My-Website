@@ -147,13 +147,13 @@ function CloudComputing() {
         <h2 class="font-bold text-2xl">Advantages of Cloud Computing.</h2>
       </div>
       <div class="flex justify-center items-center">
-        <p>Cloud computing enables users/businesses to utilise high-end hardware and bandwidth without needing to manage infrastructure themselves, such as maintenance on the servers. This allows the user to continue business as usual, minimising loss of productivity as they don't need to actively managed the infrastructure.</p>
+        <p>Cloud computing enables users/businesses to utilise high-end hardware (+bandwidth) without needing to manage infrastructure themselves, such as maintenance on the servers. This allows the user to continue business as usual, minimising loss of productivity as they don't need to actively managed the infrastructure.</p>
       </div>
       <div class="flex justify-center items-center py-8">
         <h2 class="font-bold text-2xl">Disadvantages of Cloud Computing.</h2>
       </div>
       <div class="flex justify-center items-center">
-        <p>Although cloud computing has numerous advantages, there are factors that can deter users from using cloud computing. First, servers are exposed to the internet for anyone to see; if not configured correctly, this can have disastrous consequences, such as the server being compromised by malicious actors, resulting in data theft/ransom. Second, even if the server is actively maintained by a specialist, problems may arise that result in permanent damage, such as data loss. This could be due to unexpected hardware failure or other factors (look up 'OVH fire').</p>
+        <p>Although cloud computing has numerous advantages, there are factors that can deter users from using cloud computing. First, servers are exposed to the internet for anyone to see; if not configured correctly, this can have disastrous consequences, such as the server being compromised by malicious actors, resulting in data theft/ransom. Second, even if the server is actively maintained by a specialist, problems may arise that result in permanent damage, such as data loss. This could be due to unexpected hardware failure or other factors (look up 'OVH fire'). Lastly, inorder to connect to the server you need a stable internet connection.</p>
       </div>
     </div>
   )
