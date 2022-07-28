@@ -17,6 +17,7 @@ serve(router(
     "/nine": () => render(<Nine />),
     "/cloudcomputing": () => render(<CloudComputing />),
     "/digitech": () => render(<Digitech />),
+    "/knowledge": () => render(<Knowledge />),
   },
   () => render(<NotFound />),
 ));
@@ -88,7 +89,7 @@ const articles = [
     summary: 'The World Wide Web (WWW), commonly known as the Web, is an information system enabling documents and other web resources to be accessed over the Internet. It provides access to vasts amount of information, media and services.',
     bg: '#aee8fa',
     text: '#0a1e31',
-    page: "/ai",
+    page: "/knowledge",
   },
   {
     name: "Outsourcing",
@@ -160,6 +161,37 @@ function CloudComputing() {
   )
 }
 
+function Knowledge() {
+  return (
+    <div class="mx-auto py-12 px-4 max-w-4xl sm:px-6 lg:px-8 lg:py-12 text-gray-300">
+      <div class="max-w-7xl py-12 px-6">
+        <h1 class="text-5xl font-extrabold sm:text-4xl text-[#aee8fa] text-center">Access to Knowledge or Resources</h1>
+      </div>
+      <div class="flex justify-center items-center py-6">
+        <iframe src="https://giphy.com/embed/S3Pe5NZqgmE8Tl3NI5" width="480" height="450" frameBorder="0" class="rounded" allowFullScreen></iframe>
+      </div>
+      <div class="flex justify-center items-center py-8">
+        <h2 class="font-bold text-2xl">Background</h2>
+      </div>
+      <div class="flex justify-center items-center">
+        <p>Thanks to <a href='/cloudcomputing' class='font-semibold hover:underline hover:text-[#ffbe69] hover:transition-all duration-300'>cloud computing</a> and <a href='/digitech' class='font-semibold hover:underline hover:text-[#f96d71] hover:transition-all duration-300'>digital technology</a>, there is an endless amount of content on the World Wide Web. With a simple query on a popular search engine such as Google, one can find a lot of information that is readily available to be used. Any information or content published on the web spreads really quickly thanks to various Digital Technology such as Google (by indexing the content into their search engine).</p>
+      </div>
+      <div class="flex justify-center items-center py-8">
+        <h2 class="font-bold text-2xl">Advantages of content on the web.</h2>
+      </div>
+      <div class="flex justify-center items-center">
+        <p><a class='font-semibold hover:text-[#aee8fa] hover:transition-all duration-300'>Access to knowledge or resources</a> on the internet provides a lot of benefits. One benefit is the ability to access and use various services, such as informative content, entertainment, and commerce. This can lead to easier, more convent lives for individuals since less time is spent actively sourcing the suitable content to suffice their needs.</p>
+      </div>
+      <div class="flex justify-center items-center py-8">
+        <h2 class="font-bold text-2xl">Disadvantages of content on the web</h2>
+      </div>
+      <div class="flex justify-center items-center">
+        <p>Although the marvel of accessing knowledge or resources on the web, it is not always considered a benefit. Due to the surplus information circulating on the web, it can lead to various drawbacks, as the World Wide Web is difficult to moderate since tons of new content is added every second! Privacy of an individual is at risk as it could be published by mistake or intentionally by a nefarious actor, this can lead to disastrous consequences. <a class='font-semibold hover:text-[#aee8fa] hover:transition-all duration-300'>Knowledge or resources</a> on the web can be used to misinform individuals when they are surfing the web.</p>
+      </div>
+    </div>
+  )
+}
+
 function Digitech() {
   return (
     <div class="mx-auto py-12 px-4 max-w-4xl sm:px-6 lg:px-8 lg:py-12 text-gray-300">
@@ -167,13 +199,13 @@ function Digitech() {
         <h1 class="text-5xl font-extrabold sm:text-4xl text-[#f96d71] text-center">Impacts of Digital Technology</h1>
       </div>
       <div class="flex justify-center items-center py-6">
-      <iframe src="https://giphy.com/embed/hR9VqH9eC4WMU" width="480" height="266" frameBorder="0" class="rounded" allowFullScreen></iframe>
+        <iframe src="https://giphy.com/embed/hR9VqH9eC4WMU" width="480" height="266" frameBorder="0" class="rounded" allowFullScreen></iframe>
       </div>
       <div class="flex justify-center items-center py-8">
         <h2 class="font-bold text-2xl">What are Digital Technologies?</h2>
       </div>
       <div class="flex justify-center items-center">
-        <p><a class="font-semibold hover:text-[#f96d71] hover:transition-all duration-300">Digital technologies</a> are any tools, systems, equipment, or resources that produce, store, or process data electronically. Social media, online games, multimedia, and mobile phones are popular examples.</p>
+        <p><a class="font-semibold hover:text-[#f96d71] hover:transition-all duration-300">Digital technologies</a> have changed the way many businesses operate. <a class="font-semibold hover:text-[#f96d71] hover:transition-all duration-300">Digital technologies</a> are any tools, systems, equipment, or resources that produce, store, or process data electronically. Social media, online games, multimedia, and mobile phones are popular examples.</p>
       </div>
       <div class="flex justify-center items-center py-8">
         <h2 class="font-bold text-2xl">Advantages of Digital Technologies.</h2>
