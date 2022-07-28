@@ -18,6 +18,7 @@ serve(router(
     "/cloudcomputing": () => render(<CloudComputing />),
     "/digitech": () => render(<Digitech />),
     "/knowledge": () => render(<Knowledge />),
+    "/fiverr": () => render(<Outsource />),
   },
   () => render(<NotFound />),
 ));
@@ -183,10 +184,44 @@ function Knowledge() {
         <p><a class='font-semibold hover:text-[#aee8fa] hover:transition-all duration-300'>Access to knowledge or resources</a> on the internet provides a lot of benefits. One benefit is the ability to access and use various services, such as informative content, entertainment, and commerce. This can lead to easier, more convent lives for individuals since less time is spent actively sourcing the suitable content to suffice their needs.</p>
       </div>
       <div class="flex justify-center items-center py-8">
-        <h2 class="font-bold text-2xl">Disadvantages of content on the web</h2>
+        <h2 class="font-bold text-2xl">Disadvantages of content on the web.</h2>
       </div>
       <div class="flex justify-center items-center">
         <p>Although the marvel of accessing knowledge or resources on the web, it is not always considered a benefit. Due to the surplus information circulating on the web, it can lead to various drawbacks, as the World Wide Web is difficult to moderate since tons of new content is added every second! Privacy of an individual is at risk as it could be published by mistake or intentionally by a nefarious actor, this can lead to disastrous consequences. <a class='font-semibold hover:text-[#aee8fa] hover:transition-all duration-300'>Knowledge or resources</a> on the web can be used to misinform individuals when they are surfing the web.</p>
+      </div>
+    </div>
+  )
+}
+
+function Outsource() {
+  return (
+    <div class="mx-auto py-12 px-4 max-w-4xl sm:px-6 lg:px-8 lg:py-12 text-gray-300">
+      <div class="max-w-7xl py-12 px-6">
+        <h1 class="text-5xl font-extrabold sm:text-4xl text-[#a2f6cf] text-center">Outsourcing</h1>
+      </div>
+      <div class="flex justify-center items-center py-6">
+        <iframe src="https://giphy.com/embed/j6lCwtfMS2ZNmfoyrv" width="480" height="270" frameBorder="0" class="rounded" allowFullScreen></iframe>
+      </div>
+      <div class="flex justify-center items-center text-gray-500 py-8">
+        <a>Caption: When you discover you can outsource your homework! (I was going to get someone or myself to motion track the wing with the word 'outsourcing' but i forgot).</a>
+      </div>
+      <div class="flex justify-center items-center py-8">
+        <h2 class="font-bold text-2xl">What is Outsourcing?</h2>
+      </div>
+      <div class="flex justify-center items-center">
+        <p><a class='font-semibold hover:text-[#a2f6cf] hover:transition-all duration-300'>Outsourcing</a> is an agreement in which one company hires another company or individual to accomplish a specific task. For example, I could have hired one person to develop the website and someone else to produce content for it (Spoiler: I didn't).</p>
+      </div>
+      <div class="flex justify-center items-center py-8">
+        <h2 class="font-bold text-2xl">Advantages of Outsourcing.</h2>
+      </div>
+      <div class="flex justify-center items-center">
+        <p><a class='font-semibold hover:text-[#a2f6cf] hover:transition-all duration-300'>Outsourcing</a> allows the owner of the project to focus on their priorities and other duties of the project, whilst having people(s) take care of other aspects of the project (such as website development). Another advantage of <a class='font-semibold hover:text-[#a2f6cf] hover:transition-all duration-300'>outsourcing</a> is that it can be cheaper and easy than having a division in the company take care of the specific task, this is because less management is required and may be easier to hire people overseas. An example of <a class='font-semibold hover:text-[#a2f6cf] hover:transition-all duration-300'>outsourcing</a> is the call centre of Telstra being handled overseas.</p>
+      </div>
+      <div class="flex justify-center items-center py-8">
+        <h2 class="font-bold text-2xl">Disadvantages of Outsourcing.</h2>
+      </div>
+      <div class="flex justify-center items-center">
+        <p>A disadvantage of outsourcing is that the contracted company/individual might be overseas, thus being in a different timezone. This results in inefficient communication, since one party might be sleeping. Another problem is that the contracted company/individual might not perform/deliver satisfactory results, causing unwanted disputes between both parties about the contract. Intellectual property from previous clients and current hires can be stolen by contracted workers (which is why you should always background check hires).</p>
       </div>
     </div>
   )
