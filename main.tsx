@@ -16,6 +16,7 @@ serve(router(
     // Task 9
     "/nine": () => render(<Nine />),
     "/cloudcomputing": () => render(<CloudComputing />),
+    "/digitech": () => render(<Digitech />),
   },
   () => render(<NotFound />),
 ));
@@ -140,20 +141,51 @@ function CloudComputing() {
         <h2 class="font-bold text-2xl">What is Cloud Computing?</h2>
       </div>
       <div class="flex justify-center items-center">
-        <p><span class="font-semibold">Cloud Computing</span> is the practise of storing, managing, and processing data on a network of remote servers hosted on the internet rather than a local server or a personal computer.
+        <p><a class="font-semibold hover:text-[#ffbe69] hover:transition-all duration-300">Cloud Computing</a> is the practise of storing, managing, and processing data on a network of remote servers hosted on the internet rather than a local server or a personal computer.
         An example of cloud computing are infrastructure providers (AWS, GCP, DigitalOcean, Vultr, OVH, ...) that host a variety of servers which can be rented by users and businesses to host content or preform resource intensive tasks.</p>
       </div>
       <div class="flex justify-center items-center py-8">
         <h2 class="font-bold text-2xl">Advantages of Cloud Computing.</h2>
       </div>
       <div class="flex justify-center items-center">
-        <p>Cloud computing enables users/businesses to utilise high-end hardware (+bandwidth) without needing to manage infrastructure themselves, such as maintenance on the servers. This allows the user to continue business as usual, minimising loss of productivity as they don't need to actively managed the infrastructure.</p>
+        <p><a class="font-semibold hover:text-[#ffbe69] hover:transition-all duration-300">Cloud Computing</a> enables users/businesses to utilise high-end hardware (+bandwidth) without needing to manage infrastructure themselves, such as maintenance on the servers. This allows the user to continue business as usual, minimising loss of productivity as they don't need to actively managed the infrastructure.</p>
       </div>
       <div class="flex justify-center items-center py-8">
         <h2 class="font-bold text-2xl">Disadvantages of Cloud Computing.</h2>
       </div>
       <div class="flex justify-center items-center">
-        <p>Although cloud computing has numerous advantages, there are factors that can deter users from using cloud computing. First, servers are exposed to the internet for anyone to see; if not configured correctly, this can have disastrous consequences, such as the server being compromised by malicious actors, resulting in data theft/ransom. Second, even if the server is actively maintained by a specialist, problems may arise that result in permanent damage, such as data loss. This could be due to unexpected hardware failure or other factors (look up 'OVH fire'). Lastly, inorder to connect to the server you need a stable internet connection.</p>
+        <p>Although <a class="font-semibold hover:text-[#ffbe69] hover:transition-all duration-300">Cloud Computing</a> has numerous advantages, there are factors that can deter users from using cloud computing. First, servers are exposed to the internet for anyone to see; if not configured correctly, this can have disastrous consequences, such as the server being compromised by malicious actors, resulting in data theft/ransom. Second, even if the server is actively maintained by a specialist, problems may arise that result in permanent damage, such as data loss. This could be due to unexpected hardware failure or other factors (look up 'OVH fire'). Lastly, inorder to connect to the server you need a stable internet connection.</p>
+      </div>
+    </div>
+  )
+}
+
+function Digitech() {
+  return (
+    <div class="mx-auto py-12 px-4 max-w-4xl sm:px-6 lg:px-8 lg:py-12 text-gray-300">
+      <div class="max-w-7xl py-12 px-6">
+        <h1 class="text-5xl font-extrabold sm:text-4xl text-[#f96d71] text-center">Impacts of Digital Technology</h1>
+      </div>
+      <div class="flex justify-center items-center py-6">
+      <iframe src="https://giphy.com/embed/hR9VqH9eC4WMU" width="480" height="266" frameBorder="0" class="rounded" allowFullScreen></iframe>
+      </div>
+      <div class="flex justify-center items-center py-8">
+        <h2 class="font-bold text-2xl">What are Digital Technologies?</h2>
+      </div>
+      <div class="flex justify-center items-center">
+        <p><a class="font-semibold hover:text-[#f96d71] hover:transition-all duration-300">Digital technologies</a> are any tools, systems, equipment, or resources that produce, store, or process data electronically. Social media, online games, multimedia, and mobile phones are popular examples.</p>
+      </div>
+      <div class="flex justify-center items-center py-8">
+        <h2 class="font-bold text-2xl">Advantages of Digital Technologies.</h2>
+      </div>
+      <div class="flex justify-center items-center">
+        <p>Thanks to the advances to technology, a vast amount of possibilities have become available to consumers. One output of this effect is social networking, the ability for an individual to send messages (and other media) to another person from the convenience of their phone. Digital technology is the new frontier in development, creating applications/software powered by <a href='/cloudcomputing' class='font-semibold hover:underline hover:text-[#ffbe69] hover:transition-all duration-300'>cloud computing</a>, to simplify everyday tasks.</p>
+      </div>
+      <div class="flex justify-center items-center py-8">
+        <h2 class="font-bold text-2xl">Disadvantages of Digital Technologies.</h2>
+      </div>
+      <div class="flex justify-center items-center">
+        <p>There are still concerns despite technological advances causing a surge in digital technology appearing on the internet. Although the digital world has provided us with many new ways to achieve things, it has also had a negative impact on its users. Users have developed addictions due to it, and people are isolating in the virtual world rather than in real-life. Another notable for concern is data security, when using digital technology, we are allowing the platforms to save our information whether its important forms of media to personal/sensitive information.</p>
       </div>
     </div>
   )
