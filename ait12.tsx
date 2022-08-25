@@ -26,22 +26,25 @@ serve(router(
 function App({ children }) {
   return (
     //text-[#69F5FF]
-    <div class="min-h-screen bg-[#0f0f0f]">
+    <div class="min-h-screen bg-[#ACE6FC]">
       <NavBar />
       {children}
+      <script type="text/javascript" src="https://gistcdn.githack.com/hashdashme/b208d53b69c5f6d76ec5510ae8c33abe/raw/9a31ccb786538bccd88b983b209867b93728e68b/smooth.js"></script>
     </div>
   );
 }
 
 function NavBar() {
   return (
-    <nav class="sticky flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-4 px-6 sm:items-baseline w-full top-0 z-10 bg-[#0f0f0f] backdrop-filter backdrop-blur-lg bg-opacity-30 text-3xl font-extrabold tracking-tight md:text-4xl text-white">
+    <nav class="sticky flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-4 px-6 sm:items-baseline w-full top-0 z-10 backdrop-filter backdrop-blur-lg bg-opacity-30 text-3xl font-extrabold tracking-tight md:text-4xl text-white">
      <div class="mb-2 sm:mb-0">
       <a href="/" class="text-2xl no-underline">The Website</a>
      </div>
-     <div class="text-[#69aaff] space-x-7">
-        <a href="/nine" class="text-lg no-underline hover:text-[#87bbff] ml-3">Task 9</a>
-        <a href="https://www.youtube.com/watch?v=tO516EaRYHc" target="_blank" class="text-lg no-underline hover:text-[#87bbff] ml-3">Placeholder</a>
+     <div class="space-x-7 text-lg no-underline ml-3">
+        <a href="/nine" class="hover:text-gray-200">About</a>
+        <a href="/nine" class="hover:text-gray-200">Experience</a>
+        <a href="/nine" class="hover:text-gray-200">Skills</a>
+        <a href="/nine" class="hover:text-gray-200">Interests</a>
      </div>
     </nav>
   );
@@ -50,20 +53,13 @@ function NavBar() {
 function Landing() {
   return (
     <div>
-      <div class="flex justify-center items-center py-12">
-        <iframe class="rounded" src="https://giphy.com/embed/tXLpxypfSXvUc" width="346" height="316" frameBorder="0"></iframe>
-      </div>
       <div class="flex justify-center items-center">
         <div class="max-w-7xl py-24 px-4 sm:px-6 lg:py-24 lg:px-8 lg:flex lg:items-center lg:justify-between">
-          <h2 class="text-3xl font-extrabold tracking-tight text-gray-500 md:text-4xl">
-            <span class="block">We are online!</span>
-            <span class="block text-[#b6d5ff]">Welcome to 'Task 12'.</span>
+          <h2 class="text-3xl font-extrabold tracking-tight text-[#242424] md:text-4xl">
+            <span class="block translate-y-12 duration-700 transition-[transform,opacity] relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>Hey 👋 I'm Oscar,</span>
+            <span class="block translate-y-12 duration-700 transition-[transform,opacity] delay-150 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>I make stuff.</span>
+            <span class="py-6 text-2xl font-bold block translate-y-12 duration-700 transition-[transform,opacity] delay-300 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>Welcome to my website! I have a tendeancy to automate problems that surface in my life.</span>
           </h2>
-          <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0 lg:ml-8">
-            <div class="inline-flex rounded-md shadow">
-              <a href="/nine" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-[#368dff] hover:bg-[#1d7fff]"> Go to Task 9 </a>
-            </div>
-          </div>
         </div>
       </div>
     </div>
