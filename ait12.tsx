@@ -18,8 +18,18 @@ serve(router(
     "/experience": () => render(<Experience />),
     "/skills": () => render(<Skills />),
     "/interests": () => render(<Interests />),
+
+    // Skills
+    "/image": () => render(<Image />),
+    "/audio": () => render(<Audio />),
+    "/video": () => render(<Video />),
+    "/word": () => render(<Word />),
+    "/excel": () => render(<Excel />),
+    "/power": () => render(<Power />),
   },
-  () => render(<NotFound />),
+  (d) => {
+    render(<NotFound />)
+  },
 ));
 
 function App({ children }) {
@@ -107,13 +117,13 @@ function About() {
         <h2 class="font-bold text-2xl text-center">Whats this?</h2>
       </div>
       <div class="flex justify-center items-center block translate-y-12 duration-700 transition-[transform,opacity] delay-500 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
-        <p>A website is what this is. It is hosted with Deno Deploy, uses TailwindCSS + a tiny script for the looks and NanoSSR for the smooth browsing experience.</p>
+        <p>A website is what this is. It is hosted with Deno Deploy, uses TailwindCSS + a tiny script for the looks and NanoSSR for the snappy browsing experience. Most of the media/content is hosted on a blockchain network (Sia).</p>
       </div>
       <div class="flex justify-center items-center py-8 block translate-y-12 duration-700 transition-[transform,opacity] delay-700 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
         <h2 class="font-bold text-2xl text-center">Anything else?</h2>
       </div>
       <div class="flex justify-center items-center block translate-y-12 duration-700 transition-[transform,opacity] delay-1000 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
-        <p>Nope.</p>
+        <p>In about 90 days (starting on 28 Aug 2022) the site will begin to decay, some content will no longer exist..</p>
       </div>
     </div>
   )
@@ -224,6 +234,143 @@ function Skills() {
             <a class="hover:text-[#242424] duration-300" href={skill.link}>{skill.name}</a>
           </div>
         ))}
+      </div>
+    </div>
+  )
+}
+
+function Image() {
+  return (
+    <div class="mx-auto py-12 px-4 max-w-4xl sm:px-6 lg:px-8 lg:py-12 text-[#242424]">
+      <div class="max-w-7xl py-12 px-6 block translate-y-12 duration-700 transition-[transform,opacity] relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+        <h1 class="text-5xl font-extrabold sm:text-4xl text-[#242424] text-center">Skills - Image</h1>
+      </div>
+      <div class="text-center flex justify-center items-center block translate-y-12 duration-700 transition-[transform,opacity] delay-150 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+        <p>I can create and manipulate images.</p>
+      </div>
+      <div class="flex justify-center items-center py-8 block translate-y-12 duration-700 transition-[transform,opacity] delay-300 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+        <img class="rounded block translate-y-12 duration-700 transition-[transform,opacity] delay-300 relative opacity-0 transform" src="https://cdn-ajggd.nitrocdn.com/kMoOFpDlsOVtlYJLrnSRNCQXaUFHZPTY/assets/static/optimized/rev-97673c7/wp-content/uploads/2020/08/photoshop-cc.jpg" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'></img>
+      </div>
+      <div class="flex justify-center items-center block translate-y-12 duration-700 transition-[transform,opacity] delay-500 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+        <p>I am proficient with Photoshop (as demonstrated above), MS Paint, Preview, Gimp...</p>
+      </div>
+      <div class="flex py-12 justify-center text-center items-center block translate-y-12 duration-700 transition-[transform,opacity] delay-1000 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+        <a class="font-bold text-2xl text-white hover:text-[#242424] duration-300" href="/skills">Back to Skills</a>
+      </div>
+    </div>
+  )
+}
+
+function Audio() {
+  return (
+    <div class="mx-auto py-12 px-4 max-w-4xl sm:px-6 lg:px-8 lg:py-12 text-[#242424]">
+      <div class="max-w-7xl py-12 px-6 block translate-y-12 duration-700 transition-[transform,opacity] relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+        <h1 class="text-5xl font-extrabold sm:text-4xl text-[#242424] text-center">Skills - Audio</h1>
+      </div>
+      <div class="text-center flex justify-center items-center block translate-y-12 duration-700 transition-[transform,opacity] delay-150 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+        <p>I can create audio.</p>
+      </div>
+      <div class="flex justify-center items-center py-8 block translate-y-12 duration-700 transition-[transform,opacity] delay-300 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+        <audio controls class="block content-center translate-y-12 duration-700 transition-[transform,opacity] delay-300 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+          <source src="https://siasky.net/JABsGL6vDErDf2R-kmvbumZecUFDDSUrxVTLdWcs79HYlw" type="audio/mp3"/>
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="flex justify-center items-center block translate-y-12 duration-700 transition-[transform,opacity] delay-500 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+        <p>Audacity, Microphone and a human was used to create this piece of audio. (No humans were harmed during the creation of this audio)</p>
+      </div>
+      <div class="flex py-12 justify-center text-center items-center block translate-y-12 duration-700 transition-[transform,opacity] delay-1000 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+        <a class="font-bold text-2xl text-white hover:text-[#242424] duration-300" href="/skills">Back to Skills</a>
+      </div>
+    </div>
+  )
+}
+
+function Video() {
+  return (
+    <div class="mx-auto py-12 px-4 max-w-4xl sm:px-6 lg:px-8 lg:py-12 text-[#242424]">
+      <div class="max-w-7xl py-12 px-6 block translate-y-12 duration-700 transition-[transform,opacity] relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+        <h1 class="text-5xl font-extrabold sm:text-4xl text-[#242424] text-center">Skills - Video</h1>
+      </div>
+      <div class="text-center flex justify-center items-center block translate-y-12 duration-700 transition-[transform,opacity] delay-150 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+        <p>I can create motion pictures with and without sound.</p>
+      </div>
+      <div class="flex justify-center items-center py-8 block translate-y-12 duration-700 transition-[transform,opacity] delay-300 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+        <video width="1280" length="720" controls class="block content-center translate-y-12 duration-700 transition-[transform,opacity] delay-300 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+          <source src="https://siasky.net/CABKN8u0DIUnYCb5KWMj-4HKozmPXrQ2l6d1wq26OpFSYA" type="video/mp4"/>
+        </video>
+      </div>
+      <div class="flex justify-center items-center block translate-y-12 duration-700 transition-[transform,opacity] delay-500 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+        {/* <p></p>/ */}
+      </div>
+      <div class="flex py-12 justify-center text-center items-center block translate-y-12 duration-700 transition-[transform,opacity] delay-1000 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+        <a class="font-bold text-2xl text-white hover:text-[#242424] duration-300" href="/skills">Back to Skills</a>
+      </div>
+    </div>
+  )
+}
+
+function Word() {
+  return (
+    <div class="mx-auto py-12 px-4 max-w-4xl sm:px-6 lg:px-8 lg:py-12 text-[#242424]">
+      <div class="max-w-7xl py-12 px-6 block translate-y-12 duration-700 transition-[transform,opacity] relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+        <h1 class="text-5xl font-extrabold sm:text-4xl text-[#242424] text-center">Skills - Word Processing</h1>
+      </div>
+      <div class="text-center flex justify-center items-center block translate-y-12 duration-700 transition-[transform,opacity] delay-150 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+        <p>I create documents that contain text.</p>
+      </div>
+      <div class="flex justify-center items-center py-8 block translate-y-12 duration-700 transition-[transform,opacity] delay-300 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+        <img class="rounded block translate-y-12 duration-700 transition-[transform,opacity] delay-300 relative opacity-0 transform" src="https://siasky.net/PAJ3fqT2DF4wa_Bmjo9En-UtwEjpCWxgtqrVz8m9FspuwA" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'></img>
+      </div>
+      <div class="flex justify-center items-center block translate-y-12 duration-700 transition-[transform,opacity] delay-500 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+        <p>Some software I use to achieve this are: Word, TextEdit, Notes, ...</p>
+      </div>
+      <div class="flex py-12 justify-center text-center items-center block translate-y-12 duration-700 transition-[transform,opacity] delay-1000 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+        <a class="font-bold text-2xl text-white hover:text-[#242424] duration-300" href="/skills">Back to Skills</a>
+      </div>
+    </div>
+  )
+}
+
+function Excel() {
+  return (
+    <div class="mx-auto py-12 px-4 max-w-4xl sm:px-6 lg:px-8 lg:py-12 text-[#242424]">
+      <div class="max-w-7xl py-12 px-6 block translate-y-12 duration-700 transition-[transform,opacity] relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+        <h1 class="text-5xl font-extrabold sm:text-4xl text-[#242424] text-center">Skills - Spreadsheets</h1>
+      </div>
+      <div class="text-center flex justify-center items-center block translate-y-12 duration-700 transition-[transform,opacity] delay-150 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+        <p>I am proficient in Spreadsheets</p>
+      </div>
+      <div class="flex justify-center items-center py-8 block translate-y-12 duration-700 transition-[transform,opacity] delay-300 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+        <img class="rounded block translate-y-12 duration-700 transition-[transform,opacity] delay-300 relative opacity-0 transform" src="https://siasky.net/TABi0COGLLT3prYhXTFokwA1OtbjEdBP68u_plv383SJDw" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'></img>
+      </div>
+      <div class="flex justify-center items-center block translate-y-12 duration-700 transition-[transform,opacity] delay-500 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+        <p>Some software I use to achieve this are: Excel, Numbers, ...</p>
+      </div>
+      <div class="flex py-12 justify-center text-center items-center block translate-y-12 duration-700 transition-[transform,opacity] delay-1000 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+        <a class="font-bold text-2xl text-white hover:text-[#242424] duration-300" href="/skills">Back to Skills</a>
+      </div>
+    </div>
+  )
+}
+
+function Power() {
+  return (
+    <div class="mx-auto py-12 px-4 max-w-4xl sm:px-6 lg:px-8 lg:py-12 text-[#242424]">
+      <div class="max-w-7xl py-12 px-6 block translate-y-12 duration-700 transition-[transform,opacity] relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+        <h1 class="text-5xl font-extrabold sm:text-4xl text-[#242424] text-center">Skills - Presentations</h1>
+      </div>
+      <div class="text-center flex justify-center items-center block translate-y-12 duration-700 transition-[transform,opacity] delay-150 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+        <p>I can make presentations on my computer.</p>
+      </div>
+      <div class="flex justify-center items-center py-8 block translate-y-12 duration-700 transition-[transform,opacity] delay-300 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+        <img class="rounded block translate-y-12 duration-700 transition-[transform,opacity] delay-300 relative opacity-0 transform" src="https://siasky.net/ZAD7_NA043nwsNfeTBgg8EkOqDpbB1oXRuT13xo3DDU0GQ" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'></img>
+      </div>
+      <div class="flex justify-center items-center block translate-y-12 duration-700 transition-[transform,opacity] delay-500 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+        <p>Some software I use to achieve this are: Excel, Numbers, ...</p>
+      </div>
+      <div class="flex py-12 justify-center text-center items-center block translate-y-12 duration-700 transition-[transform,opacity] delay-1000 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+        <a class="font-bold text-2xl text-white hover:text-[#242424] duration-300" href="/skills">Back to Skills</a>
       </div>
     </div>
   )
