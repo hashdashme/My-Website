@@ -123,7 +123,7 @@ function About() {
         <h2 class="font-bold text-2xl text-center">Anything else?</h2>
       </div>
       <div class="flex justify-center items-center block translate-y-12 duration-700 transition-[transform,opacity] delay-1000 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
-        <p>In about 90 days (starting on 28 Aug 2022) the site will begin to decay, some content will no longer exist..</p>
+        <p>In about 90 days from now (28 Aug 2022) the site will begin to decay, some content will no longer exist..</p>
       </div>
     </div>
   )
@@ -367,7 +367,7 @@ function Power() {
         <img class="rounded block translate-y-12 duration-700 transition-[transform,opacity] delay-300 relative opacity-0 transform" src="https://siasky.net/ZAD7_NA043nwsNfeTBgg8EkOqDpbB1oXRuT13xo3DDU0GQ" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'></img>
       </div>
       <div class="flex justify-center items-center block translate-y-12 duration-700 transition-[transform,opacity] delay-500 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
-        <p>Some software I use to achieve this are: Excel, Numbers, ...</p>
+        <p>Some software I use to achieve this are: Powerpoint, Keynote, ...</p>
       </div>
       <div class="flex py-12 justify-center text-center items-center block translate-y-12 duration-700 transition-[transform,opacity] delay-1000 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
         <a class="font-bold text-2xl text-white hover:text-[#242424] duration-300" href="/skills">Back to Skills</a>
