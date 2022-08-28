@@ -179,7 +179,7 @@ function Interests() {
         <h2 class="font-bold text-2xl text-center">Anything else?</h2>
       </div>
       <div class="flex justify-center items-center block translate-y-12 duration-700 transition-[transform,opacity] delay-1000 relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
-        <p>Let me think about that... Check out my other <a href="https://nebula.deno.dev">website</a>.</p>
+        <p>Check out my other <a class="font-bold hover:text-black" href="https://nebula.deno.dev">website</a>.</p>
       </div>
     </div>
   )
