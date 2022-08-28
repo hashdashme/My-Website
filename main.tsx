@@ -57,11 +57,11 @@ function Landing() {
         <div class="max-w-7xl py-24 px-4 sm:px-6 lg:py-24 lg:px-8 lg:flex lg:items-center lg:justify-between">
           <h2 class="text-3xl font-extrabold tracking-tight text-gray-500 md:text-4xl">
             <span class="block">We are online!</span>
-            <span class="block text-[#b6d5ff]">Welcome to 'Task 12'.</span>
+            <span class="block text-[#b6d5ff]">Welcome to 'Task 9'.</span>
           </h2>
           <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0 lg:ml-8">
             <div class="inline-flex rounded-md shadow">
-              <a href="/nine" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-[#368dff] hover:bg-[#1d7fff]"> Go to Task 9 </a>
+              <a href="antique.deno.dev" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-[#368dff] hover:bg-[#1d7fff]"> Click here for Task 12 </a>
             </div>
           </div>
         </div>

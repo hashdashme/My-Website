@@ -18,9 +18,6 @@ serve(router(
     "/experience": () => render(<Experience />),
     "/skills": () => render(<Skills />),
     "/interests": () => render(<Interests />),
-
-    // Other pages
-    "/fiverr": () => render(<Outsource />),
   },
   () => render(<NotFound />),
 ));
@@ -215,15 +212,15 @@ const skills = [
 function Skills() {
   return (
     <div class="mx-auto py-12 px-4 max-w-4xl sm:px-6 lg:px-8 lg:py-12 text-[#242424]">
-      <div class="max-w-7xl py-6 px-6 block translate-y-12 duration-700 transition-[transform,opacity] relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+      {/* <div class="max-w-7xl py-6 px-6 block translate-y-12 duration-700 transition-[transform,opacity] relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
         <h1 class="text-5xl font-extrabold sm:text-4xl text-[#242424] text-center">My Skills!</h1>
       </div>
       <div class="flex justify-center items-center text-center text-gray-500 block delay-150 translate-y-12 duration-700 transition-[transform,opacity] relative opacity-0 transform" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
         No, i totally didn't generate these skills from a variable named 'skills' which contains... Ah what ever, go ahead and explore.
-      </div>
+      </div> */}
       <div class={`grid grid-flow-row-dense md:grid-cols-1 grid-rows-${skills.length} gap-7 py-8`}>
         {skills.map((skill) => (
-          <div key={skill.name} class="text-center font-extrabold text-6xl sm:text-5xl py-2 px-8 space-y-1 flex flex-1 flex-col justify-between text-white block delay-500 duration-700 transition-[transform,opacity] relative opacity-0 transform" data-replace='{ "opacity-0": "opacity-100" }'>
+          <div key={skill.name} class="text-center font-extrabold text-6xl sm:text-5xl py-2 px-8 space-y-1 flex flex-1 flex-col justify-between text-white block duration-700 transition-[transform,opacity] relative opacity-0 transform" data-replace='{ "opacity-0": "opacity-100" }'>
             <a class="hover:text-[#242424] duration-300" href={skill.link}>{skill.name}</a>
           </div>
         ))}
