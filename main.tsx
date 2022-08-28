@@ -61,7 +61,7 @@ function Landing() {
           </h2>
           <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0 lg:ml-8">
             <div class="inline-flex rounded-md shadow">
-              <a href="antique.deno.dev" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-[#368dff] hover:bg-[#1d7fff]"> Click here for Task 12 </a>
+              <a href="https://antique.deno.dev" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-[#368dff] hover:bg-[#1d7fff]"> Click here for Task 12 </a>
             </div>
           </div>
         </div>
